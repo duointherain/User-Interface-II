@@ -114,6 +114,7 @@ header{
   p {
       font-family: 'Courier New', Courier, monospace;
       font-size: 1.5rem;
+      margin: 2rem;
   }
   #interests {
       display: flex;
@@ -134,3 +135,11 @@ footer{
     justify-content: space-around;
 }
    
+#question{
+    display: flex;
+    justify-content: center;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+}
