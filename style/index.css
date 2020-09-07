@@ -151,14 +151,22 @@ footer{
   width: 100%;
   z-index: -1;
 }
+.smBanner{
+  display: none;
+  
+}
 
- /* responsive stuff starts here -At 768px And below do the following: */
+ /* responsive stuff starts here -At 800px And below do the following: */
  @media (max-width: 800px){
   
-  
+ 
   
   .banner {
-    display: none
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    height: 15rem;
+
 
    }
 
@@ -187,7 +195,12 @@ footer{
 
  @media (max-width: 500px) {
 
-
+  .smBanner{
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    height: 15rem;
+  }
   
     .banner {
      display: none
