@@ -143,3 +143,28 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+ /* responsive stuff starts here -At 768px And below do the following: */
+ @media (max-width: 768px) {
+  
+    #banner {
+     display: none
+
+    }
+    #interests{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    
+
+    }
+    img{
+      height: 15rem;
+      width: 15rem;
+    }
+    #int2{
+      flex-direction: column;
+      text-align: center;
+    }
+
+  }
