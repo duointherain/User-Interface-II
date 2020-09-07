@@ -156,10 +156,13 @@ footer{
   
 }
 
+#intSmall{
+  display:none;
+}
+
  /* responsive stuff starts here -At 800px And below do the following: */
  @media (max-width: 800px){
   
- 
   
   .banner {
     display: flex;
@@ -180,13 +183,14 @@ footer{
   #int2{
     flex-direction: column;
     text-align: center;
+    flex-flow: column wrap;
   }
 
   #interests{
     display: flex;
     flex-direction: column;
     text-align: center;
-  
+    flex-flow: column wrap;
 
   }
 
@@ -201,6 +205,10 @@ footer{
     width: 25rem;
     height: 15rem;
   }
+
+  h2{
+    text-justify: center;
+  }
   
     .banner {
      display: none
@@ -211,6 +219,21 @@ footer{
       height: 15rem;
       width: 15rem;
     }
-    
+    #interests{
+      display: none;
+    }
+    #int2{
+      display: none;
+    }
+
+    #intSmall{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
+      flex-flow: column wrap;
+      max-height: 1000px;
+
+    }
 
   }
