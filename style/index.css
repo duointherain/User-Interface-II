@@ -143,3 +143,97 @@ footer{
     display: flex;
     justify-content: center;
 }
+.foot{
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+}
+.smBanner{
+  display: none;
+  
+}
+
+#intSmall{
+  display:none;
+}
+
+ /* responsive stuff starts here -At 800px And below do the following: */
+ @media (max-width: 800px){
+  
+  
+  .banner {
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    height: 15rem;
+
+
+   }
+
+
+   img{
+    height: 18rem;
+    width: 18rem;
+
+    
+  }
+  #int2{
+    flex-direction: column;
+    text-align: center;
+    flex-flow: column wrap;
+  }
+
+  #interests{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-flow: column wrap;
+
+  }
+
+ }
+
+
+ @media (max-width: 500px) {
+
+  .smBanner{
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    height: 15rem;
+  }
+
+  h2{
+    text-justify: center;
+  }
+  
+    .banner {
+     display: none
+
+    }
+  
+    img{
+      height: 15rem;
+      width: 15rem;
+    }
+    #interests{
+      display: none;
+    }
+    #int2{
+      display: none;
+    }
+
+    #intSmall{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
+      flex-flow: column wrap;
+      max-height: 1000px;
+
+    }
+
+  }
